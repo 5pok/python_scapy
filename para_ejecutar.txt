@@ -1,0 +1,9 @@
+scanner_puertos:  chmod +x escanerports.py
+		  python3 escanerports.py
+
+scanner_red: sudo python scanner_de_red.py -r 192.168.100.1/24
+
+sniffer_passwords: sudo python ftp_snifer.py -i wlan1
+
+arp_spoofing:       sudo python arp_spoofing.py -r 192.168.100.1/24 -g 192.168.100.1
+arp_spoofing_mitm:  sudo python mitm.py
